@@ -1,0 +1,2183 @@
+/*------------------- CSS RESET -----------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1em;
+}
+
+body {
+    width: 100%;
+    font-family: 'acumin-pro-condensed', sans-serif;
+    font-weight:normal;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.8em;
+}
+
+/*----------------- TYPOGRAPHY ------------------------*/
+
+
+h1 { /*LUCY COOK*/
+    font-family: 'rift-soft', sans-serif;
+    font-weight: normal;
+    font-size: 10vw;
+    margin: 0.5vw 3vw 0.5vw 0vw;
+}
+
+h4 { /*Welcome to my space*/
+    font-family: 'acumin-pro-condensed', sans-serif;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 33px;
+    text-align: left;
+    margin: 0vw 3vw 0vw 12vw;  
+}
+
+h5{
+    font-family: 'rift-soft', sans-serif;
+    font-weight: normal;
+    font-size: 70px;
+}
+
+h9{
+    font-family: 'rift-soft', sans-serif;
+    font-weight: normal;
+    font-size: 3.5vw;
+    color: #D898D2;
+}
+
+h6{ /*CV title*/
+    font-family: 'acumin-pro-condensed', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    padding-top: 5px;
+    line-height: 30px;
+}
+
+h7 { /*Index Project Headings*/
+    font-family: 'rift-soft', sans-serif;
+    font-weight: normal;
+    font-size: 38px;
+}
+
+h8{ /*Project page titles*/
+    font-family: 'rift-soft', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+h10{ /*CV title*/
+    font-family: 'acumin-pro-condensed', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    padding-left: 1vw;
+    line-height: 2.1vw;
+    color: #D898D2;
+}
+
+h11 { /*About title*/
+    font-family: 'rift-soft', sans-serif;
+    font-weight: normal;
+    font-size: 70px;
+}
+
+h12 { /*About sub title*/
+    font-family: 'acumin-pro-condensed', sans-serif;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 33px;
+    text-align: left;
+}
+
+b{font-weight: 10px;}
+
+
+h2{
+    font-family: 'rift-soft', sans-serif;
+    font-weight: normal;
+    font-size: 2.5vw; 
+    padding-bottom: 1vw;
+    color: #D898D2;
+}
+
+p {
+    font-size: 27px;
+    line-height: 30px;
+}
+
+p2 {
+    font-family: acumin-pro-condensed, sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 30px;}
+
+p3 {font-size: 2vw;
+    line-height: 2.2vw;}
+
+ p4 {
+    font-size: 1.5vw;
+    line-height: 1.7vw;}
+
+
+/*------------------- LINKS ----------------------------*/
+
+a {
+    color: #000;
+    font-family: 'acumin-pro-condensed', sans-serif;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+a:hover{
+    color: #D898D2;
+    transition-timing-function: ease-in-out; cursor: pointer;
+}
+
+.button {
+    padding: 1.3vw 3.5vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+  color: #fff;
+  background-color: #D898D2;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 1px 4px 20px rgba(0,0,0, 0.2);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+} 
+
+.button:hover {
+    box-shadow: 1px 4px 20px rgba(0,0,0, 0.2);
+  color: #fff;
+  transform: translateY(-5px);
+} 
+
+.aboutbutton {
+    padding: 1.3vw 3.5vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 1px 4px 20px rgba(0,0,0, 0.2);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+} 
+
+.aboutbutton:hover {
+    box-shadow: 1px 4px 20px rgba(0,0,0, 0.2);
+  color: #000;
+  transform: translateY(-5px);
+} 
+
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.animate {
+    animation: 0.5s ease 1s normal forwards 1 fadein;
+    -webkit-animation: 0.5s ease 0.5s normal forwards 1 fadein;
+    opacity: 0;}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+/*------------------ NAVIGATION -------------------------*/
+
+nav {
+    display: grid;
+    z-index:1;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+    "navlogo navlinks";
+    background-color: #FAECF5;
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 1px 4px rgba(0,0,0, 0.1);}
+
+.navlogo {
+    grid-area: navlogo;
+    padding: 10px 0px 10px 170px;}
+
+.navlogoimg{
+    width: 35%;
+    opacity: 0.85;
+    transition: opacity .2s ease-out;
+}
+
+.navlogoimg:hover{
+    opacity: 1;
+}
+
+.navlinks {
+    grid-area: navlinks;
+    text-align: right;
+    text-align: right;
+    margin-right: 170px;
+    font-family: 'acumin-pro-condensed', sans-serif;
+    letter-spacing: 1px;
+    font-size: 25px;
+    padding: 1vw 0vw 0vw 0vw;}
+
+nav a:link {color: #000;}
+
+nav a:visited {color: #000;}
+
+nav a:hover {
+    -webkit-transition: all 0.2s ease-in;
+    color: #D898D2}
+
+/*------------------ CSS GRID - HOME NAV -------------------------*/
+
+.homegrid {
+    display: grid;
+    height: 600px; 
+    background-repeat: no-repeat;
+    background-image: url(homebackground.png);
+    background-size: cover;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "hometitle homeimg";}
+
+.hometitle {
+    grid-area: hometitle;
+    text-align:right;
+    padding-top: 200px;}
+
+.homeimg {grid-area: homeimg; 
+    margin: 100px 100px 0px 80px;}
+
+
+
+
+
+.workgrid {
+    display: grid;
+    margin: 80px 210px 80px 170px;
+    grid-template-columns: 50% 50%;
+    grid-gap: 40px;
+    grid-template-areas: 
+    "hiddenimage dissimage"
+    "hiddentext disstext"
+    "cirdanimage uxpertimage"
+    "cirdantext uxperttext"
+    "holmesimage tescoprojimg"
+    "holmestext tescotext"
+    "sideprojimage ."
+    "sideprojtext .";}
+
+
+.hiddenimage{grid-area: hiddenimage;}
+.hiddenimage a:hover{
+    opacity: 0.7; transition-timing-function: ease-in-out; cursor: pointer;}
+.hiddentext{grid-area: hiddentext;}
+.hiddenimage1{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1);}
+
+.dissimage{grid-area: dissimage;}
+.dissimage a:hover{
+    opacity: 0.7; transition-timing-function: ease-in-out; cursor: pointer;}
+.disstext{grid-area: disstext;}
+.dissimage1{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1);}
+
+.cirdanimage{grid-area: cirdanimage; padding-top: 40px;}
+.cirdanimage a:hover{
+    opacity: 0.7; transition-timing-function: ease-in-out; cursor: pointer;}
+.cirdantext{grid-area: cirdantext;}
+.cirdanimage1{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1);}
+
+.uxpertimage{grid-area: uxpertimage; padding-top: 40px;}
+.uxpertimage a:hover{
+    opacity: 0.7; transition-timing-function: ease-in-out; cursor: pointer;}
+.uxperttext{grid-area: uxperttext;}
+.uxpertimage1{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1);}
+
+
+.holmesimage{grid-area: holmesimage; padding-top: 40px;}
+.holmesimage a:hover{
+    opacity: 0.7; transition-timing-function: ease-in-out; cursor: pointer;}
+.holmestext{grid-area: holmestext;}
+.holmesimage1{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1);}
+
+
+.tescoprojimg{grid-area:tescoprojimg; padding-top: 40px;}
+.tescoprojimg a:hover{
+    opacity: 0.7; transition-timing-function: ease-in-out; cursor: pointer;}
+.tescotext{grid-areA:tescotext;}
+.tescoprojimg1{grid-area:tescoprojimg1;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1);}
+
+
+
+.sideprojimage {grid-area: sideprojimage;
+padding-top: 40px;}
+.sideprojimage a:hover{
+    opacity: 0.7; transition-timing-function: ease-in-out; cursor: pointer;}
+.sideprojtext{grid-area: sideprojtext;}
+.sideprojimage1{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1);}
+
+
+/*------------------ CSS GRID - ABOUT -------------------------*/
+
+
+.aboutgrid {
+    display: grid;
+    height: 600px; 
+    background-repeat: no-repeat;
+    background-image: url(homebackground.png);
+    background-size: cover;
+    grid-template-columns: 55% 45%;
+    grid-template-areas: 
+    "abouttitle aboutimg";}
+
+.abouttitle {
+    grid-area: abouttitle;
+    padding: 170px 0px 0px 170px;}
+
+.aboutimg {grid-area: aboutimg; 
+    margin: 15px 130px 0px 70px;}
+
+
+
+
+.cvgrid {
+    display: grid;
+    padding: 0px 500px 0px 170px;
+    padding-bottom: 5vw;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    
+    "cveducation"
+    "cvcontent1"
+    "cvexperience"
+    "cvcontent2"
+    "cvcontent3";
+}
+
+.cveducation {grid-area: cveducation;
+    margin: 7vw 0vw 0vw 0vw;}
+.cvcontent1 {grid-area: cvcontent1;
+padding: 2vw 0vw 3vw 0vw;}
+
+
+.cvexperience {grid-area: cvexperience;
+padding: 4vw 0vw 0vw 0vw;}
+
+.cvcontent2 {grid-area: cvcontent2;
+padding: 2vw 0vw 3vw 0vw;}
+
+.cvcontent3 {grid-area: cvcontent3;
+padding: 2vw 0vw 3vw 0vw;}
+
+.cvgrid hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #EDEDED;
+}
+
+/*------------------ CSS GRID - HIDDEN -------------------------*/
+   
+.hiddenheader {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-areas: 
+    "hiddenintro hiddenpicture"}
+
+
+.hiddenintro{ grid-area: hiddenintro;
+    background-color: #DFF8FF;
+    padding:180px 0px 0px 170px;}
+.hiddenpicture{ grid-area: hiddenpicture;
+    background-color: #DFF8FF;
+    padding: 140px 170px 70px 70px;}
+
+    .hiddengrid {
+        display: grid;
+        padding: 70px 0px 70px 0px;
+        grid-template-columns: 60% 40%;
+        grid-template-areas: 
+        "hidden1 ."
+        "hidden1img ."
+        "hidden2 ."
+        "hidden2img hidden2img"
+        "hidden3 ."
+        "hidden3img ."
+        "hidden4 ."
+        "hidden4img hidden4img"
+        "hidden5 ."
+        "hidden5img ."
+        "hidden6 ."
+        "hidden6img ."
+        "hidden8 ."
+        "hidden8img ."
+        "hidden7 ."
+        "hidden7img hidden7img"
+        "hidden9 ."
+        "hidden9img ."
+        "hidden11img hidden11img"
+        "hidden12 hidden13"
+        "hidden12img ."
+        "hidden13img hidden13img"
+        "hidden16 ."
+        "hidden14 hidden15"
+        "hidden15img ."
+}
+
+.imagestyling {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1);}
+
+#uxpertimage2{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1);}
+
+.hidden1{grid-area: hidden1;
+    padding: 0px 0px 0px 170px;}
+.hidden1img {grid-area: hidden1img;
+    padding: 50px 0px 0px 170px;}
+.hidden2{grid-area: hidden2;
+    padding: 80px 0px 0px 170px;}
+.hidden2img {grid-area: hidden2img;
+    padding: 50px 0px 0px 0px;}
+.hidden3{grid-area: hidden3;
+    padding: 80px 0px 0px 170px;}
+.hidden3img {grid-area: hidden3img;
+    padding: 50px 0px 0px 170px;}
+.hidden4{grid-area: hidden4;
+    padding: 80px 0px 0px 170px;}
+.hidden4img {grid-area: hidden4img;
+    padding: 50px 170px 0px 170px;}
+.hidden5{grid-area: hidden5;
+    padding: 80px 0px 0px 170px;}
+.hidden5img {grid-area: hidden5img;
+    padding: 50px 0px 0px 170px;}
+.hidden6{grid-area: hidden6;
+    padding: 80px 0px 0px 170px;}
+.hidden6img {grid-area: hidden6img;
+    padding: 50px 0px 0px 170px;}
+.hidden7{grid-area: hidden7;
+    padding: 80px 0px 0px 170px;}
+.hidden7img {grid-area: hidden7img;
+    padding: 50px 0px 0px 0px;}
+.hidden8{grid-area: hidden8;
+    padding: 80px 0px 0px 170px;}
+.hidden8img {grid-area: hidden8img;
+    padding: 50px 0px 0px 170px;}
+.hidden9{grid-area: hidden9;
+    padding: 80px 0px 0px 170px;}
+.hidden9img {grid-area: hidden9img;
+    padding: 50px 0px 0px 170px;}
+.hidden11img {grid-area: hidden11img;
+    padding: 50px 0px 0px 0px;}
+.hidden12{grid-area: hidden12;
+    padding: 80px 0px 0px 170px;}
+.hidden12img {grid-area: hidden12img;
+    padding: 50px 0px 0px 170px;}
+.hidden13img {grid-area: hidden13img;
+    padding: 50px 0px 0px 0px;}
+.hidden13{grid-area: hidden13; text-align: center;
+    padding: 140px 170px 0px 0px;}
+.hidden14{grid-area: hidden14;
+    padding: 80px 0px 0px 170px;}
+.hidden15{grid-area: hidden15; text-align: center;
+    padding: 140px 170px 0px 0px;}
+.hidden15img {grid-area: hidden15img;
+    padding: 50px 0px 0px 145px;}
+.hidden16{grid-area: hidden16; 
+    padding: 80px 0px 0px 170px;}
+
+
+.hiddengrid hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #EDEDED;
+}
+
+
+/*------------------ CSS GRID - HOLMES -------------------------*/
+  
+
+.holmesheader {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-areas: 
+    "holmesintro holmespic"}
+
+
+.holmesintro{ grid-area: holmesintro;
+    background-color: #EED0CF;
+    padding:180px 0px 0px 170px;}
+.holmespic{ grid-area: holmespic;
+    background-color: #EED0CF;
+    padding: 140px 170px 70px 70px;}
+
+
+
+.holmesgrid {
+        display: grid;
+        padding: 70px 0px 70px 0px;
+        grid-template-columns: 60% 40%;
+        grid-template-areas: 
+        "holmes1 ."
+        "museumimg3 ."
+        "holmes2 ."
+        "visualimg1 holmesoldnew"
+        "holmes3 ."
+        "typographyimg ."
+        "holmes4 ."
+        "holmescolour1 holmescolour2"
+        "holmes5 ."
+        "holmesidea1 holmeswireframes"
+        "holmes6 holmes8"
+        "holmesprototype ."
+        "holmes9 holmes10"
+        "holmeswebsite holmeswebsite1"
+        "holmesreflection ."
+        "holmes11 .";}
+
+
+.holmes1 {grid-area: holmes1;
+    padding: 0px 0px 0px 170px;}
+.museumimg3 {grid-area:museumimg3;
+    padding: 50px 0px 0px 170px;}
+
+.holmes2 {grid-area: holmes2;
+    padding: 80px 0px 0px 170px;}
+.holmesoldnew {grid-area: holmesoldnew;
+    padding: 50px 170px 0px 10px;}
+.visualimg1 {grid-area:visualimg1;
+    padding: 50px 10px 0px 170px;}
+
+.holmes3 {grid-area: holmes3;
+    padding: 80px 0px 0px 170px;}
+.typographyimg {grid-area: typographyimg;
+    padding: 50px 0px 0px 170px;}
+
+.holmes4 {grid-area: holmes4;
+    padding: 80px 0px 0px 170px;}
+.holmescolour1 {grid-area: holmescolour1;
+    padding: 50px 10px 0px 170px;}
+.holmescolour2 {grid-area: holmescolour2;
+    padding: 50px 170px 0px 10px;}
+
+.holmes5 {grid-area: holmes5;
+    padding: 80px 0px 0px 170px;}
+.holmesidea1 {grid-area: holmesidea1;
+    padding: 50px 10px 0px 170px;}
+.holmeswireframes {grid-area: holmeswireframes;
+    padding: 50px 170px 0px 10px;}
+
+.holmes6 {grid-area: holmes6;
+    padding: 80px 0px 0px 170px;}
+.holmes8 {grid-area: holmes8;
+    padding: 140px 170px 0px 10px; text-align: center;}
+.holmesprototype {grid-area: holmesprototype;
+    padding: 50px 10px 0px 170px;}
+
+.holmes9 {grid-area: holmes9;
+    padding: 80px 0px 0px 170px;}
+.holmes10 {grid-area: holmes10;
+    padding: 80px 170px 0px 10px; text-align: center;}
+.holmeswebsite {grid-area: holmeswebsite;
+    padding: 50px 10px 0px 170px;}
+.holmeswebsite1 {grid-area: holmeswebsite1;
+    padding: 50px 170px 0px 10px;}
+
+.holmesreflection {grid-area: holmesreflection;
+    padding: 80px 0px 0px 170px;}
+.holmes11 {grid-area: holmes11;
+    padding: 50px 0px 50px 0px; text-align: center;}
+
+.video1{
+    width: 100%;
+    height: auto;
+}
+
+.holmesgrid hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #EDEDED;
+}
+
+/*------------------ CSS GRID - UXPERT -------------------------*/
+
+
+.uxpertheader {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-areas: 
+    "uxpertintro uxpertpicture"}
+
+
+.uxpertintro{ grid-area: uxpertintro;
+    background-color: #FFF7E3;
+    padding:180px 0px 0px 170px;}
+.uxpertpicture{ grid-area: uxpertpicture;
+    background-color: #FFF7E3;
+    padding: 140px 170px 70px 70px;}
+
+
+    .uxpertgrid {
+        display: grid;
+        padding: 70px 0px 70px 0px;
+        grid-template-columns: 60% 40%;
+        grid-template-areas: 
+        "uxpert1 ."
+        "monzoimg ."
+        "uxpert3 ."
+        "uxpert5 ."
+        "survey survey"
+        "uxpert11 ."
+        "persona ."
+        "uxpert6 ."
+        "additionimg ."
+        "uxpert7 ."
+        "forest ."
+        "uxpert14 ."
+        "patterninspo ." 
+        "uxpert8 ."
+        "uxpertbrand ."
+        "uxpert9 ."
+        "uxpertflow uxpertflow"
+        "elementcollage uxpertwireframes"
+        "uxpert10 uxpertprototype"
+        "uxpertvideo uxpertvideo"
+        "uxpertreflection ." 
+        "uxpertresearch ."
+}
+
+.imagestyling {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1);}
+
+#uxpertimage2{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.1);}
+
+.uxpert1{grid-area: uxpert1;
+    padding: 0px 0px 0px 170px;}
+.monzoimg {grid-area: monzoimg;
+    padding: 40px 0px 0px 170px;}
+
+.uxpert3 {grid-area: uxpert3;
+    padding: 80px 0px 0px 170px;}
+
+.uxpert11 {grid-area: uxpert11;
+    padding: 80px 0px 0px 170px;}
+.survey {grid-area: survey;
+    padding: 40px 170px 0px 170px;}
+.persona {grid-area: persona;
+    padding: 40px 115px 0px 170px;}
+
+.uxpert6 {grid-area: uxpert6;
+    padding: 80px 0px 0px 170px;}
+.additionimg {grid-area: additionimg;
+    padding: 40px 0px 0px 170px;}
+
+.uxpert7 {grid-area: uxpert7;
+    padding: 80px 0px 0px 170px;}
+.forest {grid-area: forest;
+    padding: 40px 0px 0px 170px;
+text-align:center;}
+
+.uxpert14 {grid-area: uxpert14;
+    padding: 80px 0px 0px 170px;}
+.patterninspo {grid-area: patterninspo;
+    padding: 40px 0px 0px 170px;}
+
+.uxpert8 {grid-area: uxpert8;
+    padding: 80px 0px 0px 170px;}
+.uxpertbrand {grid-area: uxpertbrand;
+    padding: 40px 0px 0px 170px;}
+
+.uxpert9 {grid-area: uxpert9;
+    padding: 80px 0px 0px 170px;}
+.uxpertflow {grid-area: uxpertflow;
+    padding: 40px 170px 0px 170px;}
+
+.elementcollage {grid-area: elementcollage;
+    padding: 40px 10px 0px 170px;}
+.uxpertwireframes {grid-area: uxpertwireframes;
+    padding: 40px 170px 0px 10px;}
+
+.uxpert10 {grid-area: uxpert10;
+    padding: 80px 0px 0px 170px;}
+.uxpertprototype {grid-area: uxpertprototype;
+    padding: 140px 170px 0px 0px; text-align: center;}
+.uxpertvideo {grid-area: uxpertvideo;
+    padding: 40px 270px 0px 170px;}
+.uxpertreflection {grid-area: uxpertreflection;
+    padding: 80px 0px 0px 170px;}
+.uxpertresearch {grid-area: uxpertresearch;
+    padding: 50px 0px 50px 0px; text-align: center;}
+
+.video{
+    width: 110%;
+    height: auto;
+}
+
+.uxpertgrid hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #EDEDED;
+}
+
+
+/*------------------ CSS GRID - TESCO REDESIGN -------------------------*/
+
+.tescoheader {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-areas: 
+    "tescointro tescoimage"}
+
+.tescogrid {
+    display: grid;
+    padding: 70px 0px 70px 0px;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "tescobrief tescofigma"
+    "tescoresearch tescocardsort"
+    "tescoprocess ."
+    "tescosketch tescosketch"
+    "tescoprocess2 ."
+    "tescoexample ."
+    "tescoprocess3 ."
+    "tescoblockframes tescoblockframes"
+    "tescooutcome ."
+    "tescoicons ."
+    "tescooutcome2 ."
+    "tescoprototype ." 
+    "tescoreflections ."
+    "tescoredesign tescoredesign" 
+    "tescoreflections2 ."
+    "tescolink .";}
+
+.tescointro{ grid-area: tescointro;
+    background-color: #CFE7FF;
+    padding:180px 0px 0px 170px;}
+.tescoimage{ grid-area: tescoimage;
+    background-color: #CFE7FF;
+    padding: 140px 170px 70px 70px;}
+
+.tescobrief{ grid-area: tescobrief;
+padding: 0px 0px 0px 170px;}
+.tescofigma{grid-area:tescofigma;
+padding: 40px 170px 0px 140px;}
+
+.tescoresearch{grid-area: tescoresearch;
+padding: 80px 0px 0px 170px;}
+.tescocardsort{grid-area: tescocardsort;
+    padding: 160px 170px 0px 60px;}
+
+.tescoprocess{grid-area:tescoprocess;
+padding: 80px 0px 0px 170px;}
+.tescosketch{grid-area:tescosketch;
+padding: 50px 170px 0px 170px;}
+
+.tescoprocess2{grid-area:tescoprocess2;
+padding: 80px 0px 0px 170px;}
+.tescoexample{grid-area:tescoexample;
+    padding: 50px 0px 0px 170px;}
+.tescoprocess3{grid-area:tescoprocess3;
+padding: 80px 0px 0px 170px;}
+.tescoblockframes {grid-area: tescoblockframes;
+padding: 50px 170px 0px 170px;}
+
+.tescooutcome{grid-area: tescooutcome;
+    padding: 80px 0px 0px 170px;}
+.tescoicons {grid-area: tescoicons;
+padding:50px 0px 0px 170px;}
+
+.tescooutcome2 {grid-area:tescooutcome2;
+padding:  80px 0px 0px 170px;}
+.tescoprototype{grid-area: tescoprototype;
+padding:50px 0px 0px 170px;}
+
+.tescoredesign{grid-area: tescoredesign;
+padding:50px 0px 0px 0px;}
+.tescoreflections{grid-area:tescoreflections;
+padding: 80px 0px 0px 170px;}
+.tescoreflections2 {grid-area:tescoreflections2;
+ padding: 80px 0px 0px 170px;}
+.tescolink{grid-area: tescolink;
+padding: 50px 0px 50px 0px; text-align: center;}
+
+.tescogrid hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #EDEDED;
+}
+
+
+/*------------------ CSS GRID - SIDE PROJECT -------------------------*/
+
+.sideprojectheader {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-areas: 
+    "sideprojectintro sideprojectimage"}
+
+
+.sideprojectintro{ grid-area: sideprojectintro;
+    background-color: #EFEEFB;
+    padding:180px 0px 0px 170px;}
+.sideprojectimage{ grid-area: sideprojectimage;
+    background-color: #EFEEFB;
+    padding: 140px 170px 70px 70px;}
+
+
+
+.sideprojectgrid {
+    display: grid;
+    padding: 5vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "project1 project2 project3"
+    "project4 project5 project6"
+    "project10 project11 project12"
+    "project8 project7 project9"
+    "project15 project14 project13"
+    "project16 project17 project18"}
+
+.project1 { grid-area: project1;}
+.project2 { grid-area: project2;}
+.project3 { grid-area: project3;}
+.project4 { grid-area: project4;}
+.project5 { grid-area: project5;}
+.project6 { grid-area: project6;}
+.project7 { grid-area: project7;}
+.project8 { grid-area: project8;}
+.project9 { grid-area: project9;}
+.project10 { grid-area: project10;}
+.project11 { grid-area: project11;}
+.project12 { grid-area: project12;}
+.project13 { grid-area: project13;}
+.project14 { grid-area: project14;}
+.project15 { grid-area: project15;}
+.project16 { grid-area: project16;}
+.project17 { grid-area: project17;}
+.project18 { grid-area: project18;}
+
+
+
+/*-------------------- FOOTER ----------------------*/
+
+.footergrid{
+    background-color: #FAECF5;
+    display: grid;
+    padding: 0px 170px 0px 170px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "email icons"
+}
+
+.email {
+    grid-area:email;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.emailtext{
+    font-family: 'acumin-pro-condensed', sans-serif;
+    font-weight: normal;
+    font-size: 35px;
+    border-bottom: 2.5px solid rgba(216,152,210);
+}
+
+.icons {
+    grid-area: icons;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.fa {
+    padding:10px;
+    margin: 0 7px;
+    color: #fff;
+    font-size: 25px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #D898D2;
+    box-shadow: 3px 3px 15px rgba(216,152,210, 0.4);
+}
+
+.fa:hover {
+    color: white;
+    transform: translateY(-5px); transition-timing-function: ease-in-out; cursor: pointer;
+}
+
+/*-------------------- MEDIA QUERIES - IPAD LANDSCAPE ----------------------*/
+@media (max-width: 1200px) {
+
+/*----- HOME PAGE -------*/      
+    
+    .navlogo {padding: 10px 0px 10px 60px;}
+    .navlogoimg {width: 25%;}
+    .navlinks {font-size: 30px; margin-right: 60px;}
+    
+    
+    .homegrid {
+    display: grid;
+    height: 650px; 
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "hometitle homeimg";
+    }
+
+    .hometitle {
+        padding-top: 20vw;
+        padding-bottom: 14vw;}
+
+    .homeimg {margin: 10vw 0vw 10vw 5vw;}
+
+    h3 {
+    font-size: 6vw;
+    margin-right: 31.5vw;}
+
+    h1 {
+    font-size: 130px;
+    text-align: left;
+    margin: 20px 0px 20px 60px;}
+
+    h4 {
+    font-size: 25px;
+    line-height: 2.7vw;
+    margin: 0px 0px 0px 60px;}
+    
+    .workgrid {
+    margin: 60px 100px 60px 60px;}
+
+    
+    h6{font-size: 2.3vw;
+    line-height: 2.6vw;}
+    h7 {font-size: 40px;}
+    
+    h10{font-size: 25px; 
+    padding: 6vw 0vw 0vw 1vw;
+    line-height: 3vw;}
+    
+    .footergrid{padding: 0px 60px 0px 60px;}
+    
+    .fa {
+    margin: 0 5px;
+    font-size: 25px;
+    width: 25px;}
+    
+    
+/*----- ABOUT PAGE -------*/  
+    
+    .aboutgrid {
+    display: grid;
+    height: 650px; 
+    grid-template-areas: 
+    "abouttitle aboutimg";}
+    
+    .aboutbutton {
+    margin-top: 5px;
+    padding: 1.5vw 4vw;
+    font-size: 2.5vw;} 
+    
+    .abouttitle {padding: 185px 0px 0px 60px;}
+    .aboutimg {margin: 30px 70px 00px 30px;}
+  
+    h5{font-size: 5vw;}
+    h9{font-size: 5vw;}
+    p2 {font-size: 2.3vw;
+        line-height: 2.8vw;}
+    
+    .cvgrid {padding: 60px 250px 60px 60px;}
+    
+    .cveducation {margin: 4vw 0vw 0vw 0vw;}
+
+    .cvexperience {padding: 6vw 0vw 0vw 0vw;}
+    .cvachievements {padding: 6vw 0vw 0vw 0vw;}
+
+    .cvtools {margin: 6vw 0vw 1vw 0vw;}
+    .cvskills {margin: 6vw 0vw 1vw 0vw;}
+
+    
+/*------------------ CSS GRID - HIDDEN -------------------------*/
+   
+    .hiddenintro {padding: 150px 0px 80px 60px;}
+    .hiddenpicture {padding: 12vw 10vw 0vw 5vw;}
+    
+    
+.hidden1{padding: 0px 0px 0px 60px;}
+.hidden1img {padding: 50px 0px 0px 60px;}
+.hidden2{padding: 80px 0px 0px 60px;}
+.hidden2img {padding: 50px 0px 0px 0px;}
+.hidden3{padding: 80px 0px 0px 60px;}
+.hidden3img {padding: 50px 0px 0px 60px;}
+.hidden4{padding: 80px 0px 0px 60px;}
+.hidden4img {padding: 50px 60px 0px 60px;}
+.hidden5{padding: 80px 0px 0px 60px;}
+.hidden5img {padding: 50px 0px 0px 60px;}
+.hidden6{padding: 80px 0px 0px 60px;}
+.hidden6img {padding: 50px 0px 0px 60px;}
+.hidden7{padding: 80px 0px 0px 60px;}
+.hidden7img {padding: 50px 0px 0px 0px;}
+.hidden8{padding: 80px 0px 0px 60px;}
+.hidden8img {padding: 50px 0px 0px 60px;}
+.hidden9{padding: 80px 0px 0px 60px;}
+.hidden9img {padding: 50px 0px 0px 60px;}
+.hidden11img {padding: 50px 0px 0px 0px;}
+.hidden12{padding: 80px 0px 0px 60px;}
+.hidden12img {padding: 50px 0px 0px 60px;}
+.hidden13img {padding: 50px 0px 0px 0px;}
+.hidden13{padding: 140px 60px 0px 0px;}
+.hidden14{padding: 80px 0px 0px 60px;}
+.hidden15{padding: 140px 60px 0px 0px;}
+.hidden15img {padding: 50px 0px 0px 45px;}
+.hidden16{padding: 80px 0px 0px 60px;}
+    
+    
+/*----- HOLMES PAGE -------*/ 
+    
+    h8{font-size: 4vw;}
+    h2{font-size: 3.3vw;}
+    p{font-size: 2.3vw;
+    line-height: 2.5vw;}
+    
+    
+.holmesintro{ padding: 150px 0px 80px 60px;}
+.holmespic {padding: 12vw 10vw 0vw 5vw;}
+    
+.holmes1 {padding: 0px 0px 0px 60px;}
+.museumimg3 {padding: 50px 0px 0px 60px;}
+
+.holmes2 {padding: 80px 0px 0px 60px;}
+.holmesoldnew {padding: 50px 60px 0px 10px;}
+.visualimg1 {padding: 50px 10px 0px 60px;}
+
+.holmes3 {padding: 80px 0px 0px 60px;}
+.typographyimg {padding: 50px 0px 0px 60px;}
+
+.holmes4 {padding: 80px 0px 0px 60px;}
+.holmescolour1 {padding: 50px 10px 0px 60px;}
+.holmescolour2 {padding: 50px 60px 0px 10px;}
+
+.holmes5 {padding: 80px 0px 0px 60px;}
+.holmesidea1 {padding: 50px 10px 0px 60px;}
+.holmeswireframes {padding: 50px 60px 0px 10px;}
+
+.holmes6 {padding: 80px 0px 0px 60px;}
+.holmes8 {padding: 140px 60px 0px 10px; text-align: center;}
+.holmesprototype {padding: 50px 10px 0px 60px;}
+
+.holmes9 {padding: 80px 0px 0px 60px;}
+.holmes10 {padding: 80px 60px 0px 10px; text-align: center;}
+.holmeswebsite {padding: 50px 10px 0px 60px;}
+.holmeswebsite1 {padding: 50px 60px 0px 10px;}
+
+.holmesreflection {padding: 80px 0px 0px 60px;}
+.holmes11 {padding: 50px 0px 50px 0px; text-align: center;}
+    
+    
+/*----- UXPERT PAGE -------*/  
+    
+    .button {
+    margin-top: 25px;
+    padding: 1.5vw 4vw;
+    font-size: 2.5vw;} 
+    
+.uxpertintro{ padding: 150px 0px 80px 60px;}
+.uxpertpicture {padding: 12vw 10vw 0vw 5vw;}
+    
+.uxpert1{padding: 0px 0px 0px 60px;}
+.monzoimg {padding: 40px 0px 0px 60px;}
+
+.uxpert3 {padding: 80px 0px 0px 60px;}
+
+.uxpert11 {padding: 80px 0px 0px 60px;}
+.survey {padding: 40px 60px 0px 60px;}
+.persona {padding: 40px 115px 0px 60px;}
+
+.uxpert6 {padding: 80px 0px 0px 60px;}
+.additionimg {padding: 40px 0px 0px 60px;}
+
+.uxpert7 {padding: 80px 0px 0px 60px;}
+.forest {padding: 40px 0px 0px 60px;}
+
+.uxpert14 {padding: 80px 0px 0px 60px;}
+.patterninspo {padding: 40px 0px 0px 60px;}
+
+.uxpert8 {padding: 80px 0px 0px 60px;}
+.uxpertbrand {padding: 40px 0px 0px 170px;}
+
+.uxpert9 {padding: 80px 0px 0px 60px;}
+.uxpertflow {padding: 40px 60px 0px 60px;}
+
+.elementcollage {padding: 40px 10px 0px 60px;}
+.uxpertwireframes {padding: 40px 60px 0px 10px;}
+
+.uxpert10 {padding: 80px 0px 0px 60px;}
+.uxpertprototype {padding: 140px 60px 0px 0px; text-align: center;}
+.uxpertvideo {padding: 40px 160px 0px 60px;}
+.uxpertreflection {padding: 80px 0px 0px 60px;}
+.uxpertresearch {padding: 50px 0px 50px 0px; text-align: center;}
+    
+
+
+       
+    
+/*----- TESCO PAGE -------*/ 
+    
+    
+    .tescointro{padding: 150px 0px 80px 60px;}
+    .tescoimage {padding: 12vw 10vw 0vw 5vw;}
+    
+
+    .tescobrief{padding: 0px 0px 0px 60px;}
+    .tescofigma{padding: 40px 60px 0px 100px;}
+
+    .tescoresearch{padding: 80px 0px 0px 60px;}
+    .tescocardsort{padding: 160px 60px 0px 60px;}
+
+    .tescoprocess{padding: 80px 0px 0px 60px;}
+    .tescosketch{padding: 50px 60px 0px 60px;}
+
+    .tescoprocess2{padding: 80px 0px 0px 60px;}
+    .tescoexample{padding: 50px 0px 0px 60px;}
+    .tescoprocess3{padding: 80px 0px 0px 60px;}
+    .tescoblockframes {padding: 50px 60px 0px 60px;}
+
+    .tescooutcome{padding: 80px 0px 0px 60px;}
+    .tescoicons {padding:50px 0px 0px 60px;}
+
+    .tescooutcome2 {padding:  80px 0px 0px 60px;}
+    .tescoprototype{padding:50px 0px 0px 60px;}
+
+    .tescoredesign{padding:50px 0px 0px 0px;}
+    .tescoreflections{padding: 80px 0px 0px 60px;}
+    .tescoreflections2 {padding: 80px 0px 0px 60px;}
+    .tescolink{padding: 50px 0px 50px 0px; text-align: center;}
+    
+/*----- SIDE PROJ PAGE -------*/ 
+    
+    
+    .sideprojectintro{padding: 150px 0px 80px 60px;}
+
+    .sideprojectimage {padding: 12vw 10vw 0vw 5vw;}
+    
+    .emailtext{font-size: 3vw;}
+    
+/*-------------------- MEDIA QUERIES - IPAD PORTRAIT --------------*/
+@media (max-width: 1024px) {
+    /*----- HOME PAGE -----*/
+    
+    .navlogoimg {width: 40%;}
+    .navlinks {font-size: 35px; padding-top: 10px;}
+    
+    .homegrid {
+    display: grid;
+    height: 500px; 
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "hometitle homeimg";}
+
+    .hometitle {padding: 18vw 0vw 0vw 6vw;}
+
+    h1 {font-size: 120px;
+        text-align:left;
+        padding: 0px 0px 20px 0px;
+        margin: 0vw;}
+    h4 {font-size: 28px;
+        text-align:left;
+        line-height:28px;
+        margin-left: 1vw;}
+
+    .homeimg {text-align:center; margin: 16vw 3vw 0vw 0vw;}
+
+    
+     .workgrid {
+    display: grid;
+    margin: 8vw 14vw;
+    grid-template-columns: 100%;
+    grid-gap: 40px;
+    grid-template-areas: 
+    "hiddenimage"
+    "hiddentext"
+    "dissimage"
+    "disstext"
+    "cirdanimage"
+    "cirdantext"
+    "uxpertimage"
+    "uxperttext"
+    "holmesimage"
+    "holmestext"
+    "tescoprojimg"
+    "tescotext"
+    "sideprojimage"
+    "sideprojtext"
+    "otherprojtext"
+    "otherprojtext";}
+    
+    .cirdanimage {padding-top: 8vw;}
+    .dissimage {padding-top: 8vw;}
+    .uxpertimage {padding-top: 8vw;}
+    .holmesimage {padding-top: 8vw;}
+    .brandimage {padding-top: 8vw;}
+    .tescoprojimg {padding-top: 8vw;}
+    .sideprojimage {padding-top: 8vw;}
+    .otherprojtext{padding-top: 8vw; padding-bottom: 8vw;}
+    
+    h6{font-size: 24px;
+    line-height: 28px;}
+    h7 {font-size: 50px;}
+    h10{font-size: 30px;
+    line-height: 6vw;}
+    
+    .footergrid{padding: 0vw 6vw 0vw 6vw;}
+    
+    .icons {padding: 80px 0px;}
+    .fa {
+    margin: 0 5px;
+    font-size: 25px;
+    width: 25px;}
+    
+    .emailtext{font-size: 4vw;}
+    
+    
+/*----- ABOUT PAGE -----*/
+    
+    .aboutgrid {
+    height: 500px; 
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "abouttitle aboutimg";}
+    
+    h11{font-size: 60px;}
+    h12{font-size: 28px; line-height: 28px}
+    
+    .abouttitle {padding: 12vw 0vw 0vw 6vw;}
+    .aboutimg {margin: 8vw 5vw 0vw 2vw; text-align: center;}
+    
+    .cvgrid {
+    padding: 4vw 14vw 12vw 14vw;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    
+    "cveducation cveducation"
+    "cvdate1 cvdate1"
+    "cvcontent1 cvcontent1"
+    "cvexperience cvexperience"
+    "cvdate2 cvdate2"
+    "cvcontent2 cvcontent2" 
+    "cvdate3 cvdate3"
+    "cvcontent3 cvcontent3"
+    "cvdate4 cvdate4"
+    "cvcontent4 cvcontent4"
+    "cvachievements cvachievements"
+    "cvdate7 cvdate7"
+    "cvcontent7 cvcontent7"
+    "cvdate8 cvdate8"
+    "cvcontent8 cvcontent8"
+    "cvdate9 cvdate9"
+    "cvcontent9 cvcontent9"
+    "cvtools cvskills"
+    "cvcontent15 cvcontent16" 
+    "cvbutton cvbutton";
+    }
+    
+    .cvexperience {padding-top: 10vw;}
+    .cvachievements {padding-top: 10vw;}
+    .cvtools {padding-top: 6vw;}
+    .cvskills {padding-top: 6vw;}
+    .cvdate1 {padding-top: 5vw;}
+    .cvdate2 {padding-top: 5vw;}
+    .cvdate3 {padding-top: 5vw;}
+    .cvdate4 {padding-top: 5vw;}
+    .cvdate5 {padding-top: 5vw;}
+    .cvdate6 {padding-top: 5vw;}
+    .cvdate7 {padding-top: 5vw;}
+    .cvdate8 {padding-top: 5vw;}
+    .cvdate9 {padding-top: 5vw;}
+    
+    
+    h9{font-size: 50px;}
+    h7 {font-size: 40px;}
+    p2 {font-size: 24px;
+        line-height: 24px;}
+    
+    .homebutton{padding: 2.5vw 5.5vw;
+    font-size: 28px;}
+    
+    .aboutbutton {
+    padding: 2.5vw 5.5vw;
+    font-size: 28px;} 
+
+    
+/*----- HIDDEN PAGE ----*/
+    
+    
+.hiddenheader {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "hiddenintro hiddenpicture"}
+
+.hiddenintro{padding: 13vw 2vw 6vw 6vw;}
+.hiddenpicture{padding: 15vw 6vw 0vw 0vw;}
+
+    
+    .hiddengrid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "hidden1"
+        "hidden1img"
+        "hidden2"
+        "hidden2img"
+        "hidden3"
+        "hidden3img"
+        "hidden4"
+        "hidden4img"
+        "hidden5"
+        "hidden5img"
+        "hidden6"
+        "hidden6img"
+        "hidden8"
+        "hidden8img"
+        "hidden7"
+        "hidden7img"
+        "hidden9"
+        "hidden9img"
+        "hidden11img"
+        "hidden12"
+        "hidden13"
+        "hidden12img"
+        "hidden13img"
+        "hidden16"
+        "hidden14"
+        "hidden15"
+        "hidden15img"
+}
+
+.hidden1{padding: 0vw 14vw 0vw 14vw;}
+.hidden1img {padding: 3vw 14vw 0vw 14vw;}
+.hidden2{padding: 8vw 14vw 0vw 14vw;}
+.hidden2img {padding: 3vw 0vw 0vw 0vw;}
+.hidden3{padding: 3vw 14vw 0vw 14vw;}
+.hidden3img {padding: 3vw 14vw 0vw 14vw;}
+.hidden4{padding: 8vw 14vw 0vw 14vw;}
+.hidden4img {padding: 3vw 14vw 0vw 14vw;}
+.hidden5{padding: 3vw 14vw 0vw 14vw;}
+.hidden5img {padding: 3vw 14vw 0vw 14vw;}
+.hidden6{padding: 8vw 14vw 0vw 14vw;}
+.hidden6img {padding: 3vw 14vw 0vw 14vw;}
+.hidden7{padding: 8vw 14vw 0vw 14vw;;}
+.hidden7img {padding: 3vw 0vw 0vw 0vw;}
+.hidden8{padding: 8vw 14vw 0vw 14vw;}
+.hidden8img {padding: 3vw 14vw 0vw 14vw;}
+.hidden9{padding: 8vw 14vw 0vw 14vw;}
+.hidden9img {padding: 3vw 14vw 0vw 14vw;}
+.hidden10img {padding: 3vw 0vw 0vw 0vw;}
+.hidden11img {padding: 3vw 0vw 0vw 0vw;}
+.hidden12{padding: 8vw 14vw 0vw 14vw;}
+.hidden12img {padding: 3vw 14vw 0vw 14vw;}
+.hidden13{padding: 3vw 14vw 2vw 14vw;}
+.hidden13img{padding: 3vw 0vw 0vw 0vw;}
+.hidden14{padding: 8vw 14vw 0vw 14vw;}
+.hidden15{padding: 3vw 14vw 0vw 14vw;}
+.hidden15img {padding: 3vw 12vw 8vw 12vw;}
+.hidden16{padding: 8vw 14vw 0vw 14vw;}
+    
+    
+    
+/*----- HOLMES PAGE ----*/
+    
+    h8{font-size: 40px;}
+    p{font-size: 28px;
+    line-height: 28px;}
+    
+   
+.holmesheader {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "holmesintro holmespic"}
+
+.holmesintro{padding: 13vw 2vw 6vw 6vw;}
+.holmespic{padding: 15vw 6vw 0vw 0vw;}
+
+.holmesgrid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "holmes1"
+        "museumimg3"
+        "holmes2"
+        "holmesoldnew"
+        "visualimg1"
+        "visualimg2"
+        "holmes3"
+        "typographyimg"
+        "holmes4"
+        "holmescolour1"
+        "holmescolour2" 
+        "holmes5"
+        "holmesidea1"
+        "holmeswireframes"
+        "holmes6"
+        "holmes8"
+        "holmesprototype"
+        "holmes9"
+        "holmes10"
+        "holmeswebsite"
+        "holmeswebsite1"
+        "holmesreflection"
+        "holmes11";
+    }
+
+    .button {padding: 2.5vw 5.5vw;
+    font-size: 3.5vw;} 
+
+.holmes7 {padding: 0vw 14vw 0vw 14vw;}
+.holmes1 {padding: 3vw 14vw 0vw 14vw;}
+.museumimg3 {padding: 3vw 14vw 0vw 14vw;}
+
+.holmes2 {padding: 8vw 14vw 0vw 14vw;}
+.holmesoldnew {padding: 3vw 14vw 0vw 14vw;}
+.visualimg1 {padding: 3vw 14vw 0vw 14vw;}
+.visualimg2 {padding: 3vw 14vw 0vw 14vw;}
+
+.holmes3 {padding: 8vw 14vw 0vw 14vw;}
+.typographyimg {padding: 3vw 14vw 0vw 14vw;}
+
+.holmes4 {padding: 3vw 14vw 0vw 14vw;}
+.holmescolour1 {padding: 3vw 14vw 0vw 14vw;}
+.holmescolour2 {padding: 3vw 14vw 0vw 14vw;}
+
+.holmes5 {padding: 3vw 14vw 0vw 14vw;}
+.holmesidea1 {padding: 0vw 14vw 0vw 14vw;}
+.holmeswireframes {padding: 3vw 14vw 0vw 14vw;}
+
+.holmes6 {padding: 8vw 14vw 0vw 14vw;}
+.holmes8 {padding: 1vw 14vw 6vw 14vw; text-align: center;}
+.holmesprototype {padding: 0vw 14vw 0vw 14vw;}
+
+.holmes9 {padding: 3vw 14vw 0vw 14vw;}
+.holmes10 {padding: 1vw 14vw 6vw 14vw; text-align: center;}
+.holmeswebsite {padding: 0vw 14vw 0vw 14vw;}
+.holmeswebsite1 {padding: 3vw 14vw 0vw 14vw;}
+
+.holmesreflection {margin: 8vw 14vw 0vw 14vw;}
+.holmes11 {padding: 0vw 14vw 9vw 14vw; text-align: center;}
+
+.video1{
+    width: 100%;
+    height: auto;
+}
+    
+/*----- UXPERT PAGE -------*/
+    
+    
+.uxpertheader {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "uxpertintro uxpertpicture"}
+
+.uxpertintro{padding: 13vw 2vw 6vw 6vw;}
+.uxpertpicture{padding: 15vw 6vw 0vw 0vw;}
+    
+.uxpertgrid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "uxpert1"
+        "monzoimg"
+        "uxpert3"
+        "uxpert5"
+        "survey"
+        "uxpert11"
+        "persona"
+        "uxpert6"
+        "additionimg"
+        "uxpert7"
+        "forest"
+        "uxpert14"
+        "patterninspo" 
+        "uxpert8"
+        "uxpertbrand"
+        "uxpert12"
+        "uxpertflow"
+        "uxpert9"
+        "elementcollage"
+        "uxpertwireframes" 
+        "uxpert10"
+        "uxpertprototype"
+        "uxpertvideo"
+        "uxpertreflection" 
+        "uxpertresearch"
+}
+
+.uxpert1{padding: 0vw 14vw 0vw 14vw;}
+.monzoimg {padding: 3vw 14vw 0vw 14vw;}
+.uxpert3 {padding: 7vw 14vw 0vw 14vw;}
+
+.uxpert11 {padding: 0vw 14vw 0vw 14vw;}
+.survey {padding: 3vw 14vw 6vw 14vw;}
+.persona {padding: 3vw 26vw 6vw 14vw;}
+
+.uxpert6 {padding: 0vw 14vw 0vw 14vw;}
+.additionimg {padding: 3vw 14vw 0vw 14vw;}
+
+.uxpert7 {padding: 8vw 14vw 0vw 14vw;}
+.forest {padding: 3vw 14vw 6vw 14vw;}
+
+.uxpert14 {padding: 0vw 14vw 0vw 14vw;}
+.patterninspo {padding: 3vw 14vw 6vw 14vw;}
+
+.uxpert8 {padding: 0vw 14vw 0vw 14vw;}
+.uxpert12 {padding: 0vw 14vw 1vw 14vw;}
+.uxpertbrand {padding: 3vw 14vw 6vw 14vw;}
+
+.uxpert9 {padding: 0vw 14vw 0vw 14vw;}
+.uxpertflow {padding: 3vw 14vw 6vw 14vw;}
+
+.elementcollage {padding: 3vw 14vw 0vw 14vw;}
+.uxpertwireframes {padding: 3vw 14vw 0vw 14vw;}
+
+.uxpert10 {padding: 8vw 14vw 0vw 14vw;}
+.uxpertprototype {padding: 0vw 0vw 4vw 0vw; text-align: center;}
+.uxpertvideo {padding: 3vw 14vw 0vw 14vw;}
+.uxpertreflection {padding: 8vw 14vw 0vw 14vw;}
+.uxpertresearch {padding: 1vw 14vw 9vw 14vw; text-align: center;}
+
+.video{
+    width: 100%;
+    height: auto;
+}
+
+    
+
+/*----- TESCO PAGE ----*/
+
+    
+.tescoheader {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "tescointro tescoimage"}
+
+.tescointro{padding: 13vw 2vw 6vw 6vw;}
+.tescoimage{padding: 15vw 6vw 0vw 0vw;}
+    
+    
+    .tescogrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "tescobrief"
+    "tescofigma"
+    "tescoresearch"
+    "tescocardsort"
+    "tescoprocess"
+    "tescosketch"
+    "tescoprocess2"
+    "tescoexample"
+    "tescoprocess3"
+    "tescoblockframes"
+    "tescooutcome"
+    "tescoicons"
+    "tescooutcome2"
+    "tescoprototype"
+    "tescoreflections"
+    "tescoredesign"
+    "tescoreflections2"
+    "tescolink";}
+
+.tescobrief{padding: 0vw 14vw 0vw 14vw;}
+.tescofigma{padding: 3vw 35vw 0vw 35vw; text-align: center}
+
+.tescoresearch{padding: 8vw 14vw 0vw 14vw;}
+.tescocardsort{padding: 3vw 14vw 0vw 14vw;}
+
+.tescoprocess{padding: 8vw 14vw 0vw 14vw;}
+.tescosketch{padding: 3vw 14vw 0vw 14vw;}
+.tescoprocess2{padding: 3vw 14vw 0vw 14vw;}
+.tescoexample{padding: 3vw 14vw 0vw 14vw;}
+.tescoprocess3{padding: 3vw 14vw 0vw 14vw;}
+.tescooutcome{padding: 8vw 14vw 0vw 14vw;}
+.tescoblockframes {padding: 3vw 14vw 0vw 14vw;}
+.tescoicons {padding: 3vw 14vw 0vw 14vw;}
+.tescooutcome2 {padding: 3vw 14vw 0vw 14vw;}
+.tescoprototype{padding: 3vw 14vw 0vw 14vw;}
+.tescoredesign{padding: 3vw 0vw 0vw 0vw;}
+.tescoreflections{padding: 8vw 14vw 0vw 14vw;}
+.tescoreflections2{padding: 3vw 14vw 0vw 14vw;}
+.tescolink{padding: 3vw 14vw 9vw 14vw;}
+    
+    
+    
+/*----- SIDE PROJ PAGE -------*/
+    
+.sideprojectheader {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "sideprojectintro sideprojectimage"}
+
+.sideprojectintro{padding: 13vw 2vw 6vw 6vw;}
+.sideprojectimage{padding: 15vw 6vw 0vw 0vw;}
+    
+    
+    h5{font-size: 48px;}
+    p{font-size: 28px; line-height: 28px;}
+    h2 {font-size: 36px;}
+
+
+
+.sideprojectgrid {
+    display: grid;
+    padding: 8vw 14vw;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "project1"
+    "project2"
+    "project3"
+    "project4"
+    "project5"
+    "project6"
+    "project7"
+    "project8"
+    "project9"
+    "project10"
+    "project11"
+    "project12"
+    "project13"
+    "project14"
+    "project15"
+    "project16"
+    "project17"
+    "project18"}
+
+    
+/*-------------------- MEDIA QUERIES - MOBILE ----------------------*/  
+    
+@media screen and (max-width: 450px) {
+    
+    
+/*----- HOME PAGE -------*/ 
+    
+    
+    .navlogoimg {width: 1%;}
+    .navlinks {font-size: 7vw; padding: 12px 8px 15px 0px; margin-right: 20px;}
+    
+    .homegrid {
+    grid-template-columns: 100%;
+    height: 700px;
+    grid-template-areas: 
+    "hometitle"
+    "homeimg";}
+
+    .homeimg {text-align: center; padding: 4vw 0vw 0vw 0vw; margin: 0vw;}
+
+    .hometitle {padding:20vw 8vw 0vw 8vw;}
+    h3 {font-size: 12vw;
+    text-align:left;
+    margin-left: 1vw;}
+    h1 {font-size: 21vw;
+        padding: 3vw 0vw 3vw 0vw;}
+    h4 {font-size: 6vw;
+        line-height: 6.5vw;
+        margin-left: 2vw;}
+
+
+    h6{font-size: 6vw;
+    line-height: 7vw;}
+    h7 {font-size: 10vw;}
+    h10 {font-size: 6vw;}
+    
+    .workgrid {
+    display: grid;
+    margin: 8vw;
+    grid-template-columns: 100%;
+    grid-gap: 40px;
+    grid-template-areas: 
+    "hiddenimage"
+    "hiddentext"
+    "dissimage"
+    "disstext"
+    "cirdanimage"
+    "cirdantext"
+    "uxpertimage"
+    "uxperttext"
+    "holmesimage"
+    "holmestext"
+    "tescoprojimg"
+    "tescotext"
+    "sideprojimage"
+    "sideprojtext"
+    "otherprojtext"
+    "otherprojtext";}
+    
+    .otherprojtext {padding: 40px 0px 40px 0px;}
+
+    .footergrid{
+    grid-template-columns: 100%;
+    padding: 0vw 8vw 4vw 8vw;
+    grid-template-areas:
+    "email" 
+    "icons"}
+
+    .emailtext{font-size: 8vw;}
+
+    .icons {
+        grid-area: icons;
+        padding: 20px 0px 40px 0px;}
+
+    .fa {
+        font-size: 25px;
+        width: 25px;}
+    
+/*----- ABOUT -------*/ 
+    
+    .aboutgrid {
+    grid-template-columns: 100%;
+    height: 700px;
+    grid-template-areas: 
+    "abouttitle"
+    "aboutimg";}
+    
+    h11{font-size: 15vw; padding-top: 50px;}
+    h12{font-size: 6vw; line-height: 7vw;}
+    
+    
+    .abouttitle {padding: 20vw 8vw 0vw 8vw;}
+    .aboutimg {text-align: center; padding: 0vw 20vw 0vw 20vw; margin: 0vw;}
+    .aboutimg {padding-top: 0px;}
+
+    .cvgrid {
+    padding: 12vw 8vw 12vw 8vw;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    
+    "cveducation"
+    "cvdate1"
+    "cvcontent1"
+    "cvexperience"
+    "cvdate2"
+    "cvcontent2" 
+    "cvdate3"
+    "cvcontent3"
+    "cvdate4"
+    "cvcontent4"
+    "cvachievements"
+    "cvdate7"
+    "cvcontent7"
+    "cvdate8"
+    "cvcontent8"
+    "cvdate9"
+    "cvcontent9"
+    "cvtools"
+    "cvcontent15"    
+    "cvskills"
+    "cvcontent16";}
+    
+    
+    .homebutton {
+    margin-top: 6vw;
+    padding: 3.5vw 9vw;
+    font-size: 6.5vw;} 
+    
+    .aboutbutton {
+    padding: 3.5vw 9vw;
+    font-size: 6.5vw;} 
+    
+    
+    .cvdate3 {padding-top: 8vw;}
+    .cvdate4 {padding-top: 8vw;}
+    .cvdate5 {padding-top: 8vw;}
+    .cvdate6 {padding-top: 8vw;}
+    .cvdate7 {padding-top: 8vw;}
+    .cvdate8 {padding-top: 8vw;}
+    
+    
+    h2{font-size: 8vw;
+        line-height: 10vw;}
+    p{font-size: 6vw;
+        line-height: 7vw;}
+    p2 {font-size: 6vw;
+        line-height: 6.5vw;}
+    h7 {font-size: 6vw;
+        line-height: 6.5vw;}
+    h9 {font-size: 10vw;}
+
+    
+/*----- HIDDEN PAGE -------*/ 
+    
+.hiddenheader {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "hiddenpicture"
+    "hiddenintro"}
+    
+.hiddenintro {text-align:center; padding: 0vw 8vw 8vw 4vw;}
+.hiddenpicture {padding: 22vw 8vw 8vw 8vw;}    
+    
+.hiddengrid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "hidden1"
+        "hidden1img"
+        "hidden2"
+        "hidden2img"
+        "hidden3"
+        "hidden3img"
+        "hidden4"
+        "hidden4img"
+        "hidden5"
+        "hidden5img"
+        "hidden6"
+        "hidden6img"
+        "hidden8"
+        "hidden8img"
+        "hidden7"
+        "hidden7img"
+        "hidden9"
+        "hidden9img"
+        "hidden11img"
+        "hidden12"
+        "hidden13"
+        "hidden12img"
+        "hidden13img"
+        "hidden16"
+        "hidden14"
+        "hidden15"
+        "hidden15img"
+}
+    
+.hidden1{padding: 0vw 8vw 0vw 8vw;}
+.hidden1img {padding: 6vw 8vw 0vw 8vw;}
+.hidden2{padding: 10vw 8vw 0vw 8vw;}
+.hidden2img {padding: 6vw 0vw 0vw 0vw;}
+.hidden3{padding: 6vw 8vw 0vw 8vw;}
+.hidden3img {padding: 6vw 8vw 0vw 8vw;}
+.hidden4{padding: 10vw 8vw 0vw 8vw;}
+.hidden4img {padding: 6vw 8vw 0vw 8vw;}
+.hidden5{padding: 6vw 8vw 0vw 8vw;}
+.hidden5img {padding: 6vw 8vw 0vw 8vw;}
+.hidden6{padding: 10vw 8vw 0vw 8vw;}
+.hidden6img {padding: 6vw 8vw 0vw 8vw;}
+.hidden7{padding: 10vw 8vw 0vw 8vw;;}
+.hidden7img {padding: 6vw 0vw 0vw 0vw;}
+.hidden8{padding: 10vw 8vw 0vw 8vw;}
+.hidden8img {padding: 6vw 8vw 0vw 8vw;}
+.hidden9{padding: 10vw 8vw 0vw 8vw;}
+.hidden9img {padding: 6vw 8vw 0vw 8vw;}
+.hidden10img {padding: 6vw 0vw 0vw 0vw;}
+.hidden11img {padding: 6vw 0vw 0vw 0vw;}
+.hidden12{padding: 10vw 8vw 0vw 8vw;}
+.hidden12img {padding: 6vw 8vw 0vw 8vw;}
+.hidden13{padding: 6vw 8vw 0vw 8vw;}
+.hidden13img {padding: 6vw 8vw 0vw 8vw;}
+.hidden14{padding: 10vw 8vw 0vw 8vw;}
+.hidden15{padding: 6vw 8vw 0vw 8vw;}
+.hidden15img {padding: 6vw 5vw 8vw 5vw;}
+.hidden16{padding: 6vw 8vw 0vw 8vw;}
+    
+/*----- UXPERT PAGE -------*/ 
+    
+.uxpertheader {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "uxpertpicture"
+    "uxpertintro"}
+
+    .button {
+    margin-top: 0px;
+    padding: 3.5vw 9vw;
+    font-size: 6.5vw;} 
+    
+    h5{font-size: 11vw;}
+    h8{font-size: 10vw;}
+    
+.uxpertintro {text-align:center; padding: 0vw 8vw 8vw 4vw;}
+.uxpertpicture {padding: 22vw 8vw 8vw 8vw;}  
+    
+.uxpertgrid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "uxpertpicture"
+        "uxpertintro"
+        "uxpert1"
+        "monzoimg"
+        "uxpert3"
+        "uxpert5"
+        "survey"
+        "uxpert11"
+        "persona"
+        "uxpert6"
+        "additionimg"
+        "uxpert7"
+        "forest"
+        "uxpert14"
+        "patterninspo" 
+        "uxpert8"
+        "uxpertbrand"
+        "uxpert12"
+        "uxpertflow"
+        "uxpert9"
+        "elementcollage"
+        "uxpertwireframes" 
+        "uxpert10"
+        "uxpertprototype"
+        "uxpertvideo"
+        "uxpertreflection" 
+        "uxpertresearch"
+}
+    
+    
+.uxpert1{padding: 0vw 8vw 0vw 8vw;}
+.monzoimg {padding: 6vw 8vw 0vw 8vw;}
+.uxpert3 {padding: 10vw 8vw 0vw 8vw;}
+
+.uxpert11 {padding: 0vw 8vw 0vw 8vw;}
+.survey {padding: 6vw 8vw 6vw 8vw;}
+.persona {padding: 6vw 21vw 6vw 8vw;}
+
+.uxpert6 {padding: 0vw 8vw 0vw 8vw;}
+.additionimg {padding: 6vw 8vw 0vw 8vw;}
+
+.uxpert7 {padding: 10vw 8vw 0vw 8vw;}
+.forest {padding: 6vw 8vw 6vw 8vw;}
+
+.uxpert14 {padding: 0vw 8vw 0vw 8vw;}
+.patterninspo {padding: 6vw 8vw 6vw 8vw;}
+
+.uxpert8 {padding: 0vw 8vw 0vw 8vw;}
+.uxpert12 {padding: 0vw 8vw 1vw 8vw;}
+.uxpertbrand {padding: 6vw 8vw 6vw 8vw;}
+
+.uxpert9 {padding: 0vw 8vw 0vw 8vw;}
+.uxpertflow {padding: 6vw 8vw 6vw 8vw;}
+
+.elementcollage {padding: 6vw 8vw 0vw 8vw;}
+.uxpertwireframes {padding: 6vw 8vw 0vw 8vw;}
+
+.uxpert10 {padding: 10vw 8vw 0vw 8vw;}
+.uxpertprototype {padding: 0vw 0vw 4vw 0vw; text-align: center;}
+.uxpertvideo {padding: 6vw 8vw 0vw 8vw;}
+.uxpertreflection {padding: 10vw 8vw 0vw 8vw;}
+.uxpertresearch {padding: 10vw 8vw 9vw 8vw; text-align: center;}
+    
+/*----- HOLMES PAGE -------*/    
+    
+.holmesheader {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "holmespic"
+    "holmesintro"}
+
+.holmesintro {text-align:center; padding: 0vw 8vw 8vw 4vw;}
+.holmespic {padding: 22vw 8vw 8vw 8vw;}
+    
+.holmesgrid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas
+        "holmes1"
+        "museumimg3"
+        "holmes2"
+        "holmesoldnew"
+        "visualimg1"
+        "visualimg2"
+        "holmes3"
+        "typographyimg"
+        "holmes4"
+        "holmescolour1"
+        "holmescolour2" 
+        "holmes5"
+        "holmesidea1"
+        "holmeswireframes"
+        "holmes6"
+        "holmes8"
+        "holmesprototype"
+        "holmes9"
+        "holmes10"
+        "holmeswebsite"
+        "holmeswebsite1"
+        "holmesreflection"
+        "holmes11";
+    }
+    
+.holmes7 {padding: 0vw 8vw 0vw 8vw;}
+.holmes1 {padding: 6vw 8vw 0vw 8vw;}
+.museumimg3 {padding: 10vw 8vw 0vw 8vw;}
+
+.holmes2 {padding: 10vw 8vw 0vw 8vw;}
+.holmesoldnew {padding: 6vw 8vw 0vw 8vw;}
+.visualimg1 {padding: 6vw 8vw 0vw 8vw;}
+.visualimg2 {padding: 6vw 8vw 0vw 8vw;}
+
+.holmes3 {padding: 10vw 8vw 0vw 8vw;}
+.typographyimg {padding: 6vw 8vw 0vw 8vw;}
+
+.holmes4 {padding: 6vw 8vw 0vw 8vw;}
+.holmescolour1 {padding: 6vw 8vw 0vw 8vw;}
+.holmescolour2 {padding: 6vw 8vw 0vw 8vw;}
+
+.holmes5 {padding: 6vw 8vw 0vw 8vw;}
+.holmesidea1 {padding: 0vw 8vw 0vw 8vw;}
+.holmeswireframes {padding: 6vw 8vw 0vw 8vw;}
+
+.holmes6 {padding: 10vw 8vw 0vw 8vw;}
+.holmes8 {padding: 6vw 8vw 6vw 8vw; text-align: center;}
+.holmesprototype {padding: 6vw 8vw 0vw 8vw;}
+
+.holmes9 {padding: 6vw 8vw 0vw 8vw;}
+.holmes10 {padding: 6vw 8vw 6vw 8vw; text-align: center;}
+.holmeswebsite {padding: 0vw 8vw 0vw 8vw;}
+.holmeswebsite1 {padding: 6vw 8vw 0vw 8vw;}
+
+.holmesreflection {padding: 6vw 8vw 0vw 0vw;}
+.holmes11 {padding: 6vw 8vw 8vw 8vw; text-align: center;}
+
+
+/*----- TESCO PAGE -------*/    
+    
+.tescoheader {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "tescoimage"
+    "tescointro"}
+    
+.tescointro {text-align:center; padding: 0vw 8vw 8vw 4vw;}    
+.tescoimage{ padding: 22vw 8vw 8vw 8vw;}
+    
+    
+.tescogrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "tescobrief"
+    "tescofigma"
+    "tescoresearch"
+    "tescocardsort"
+    "tescoprocess"
+    "tescosketch"
+    "tescoprocess2"
+    "tescoexample"
+    "tescoprocess3"
+    "tescoblockframes"
+    "tescooutcome"
+    "tescoicons"
+    "tescooutcome2"
+    "tescoprototype"
+    "tescoreflections"
+    "tescoredesign"
+    "tescoreflections2"
+    "tescolink";}
+    
+.tescobrief{padding: 0vw 8vw 0vw 8vw;}
+.tescofigma{padding: 6vw 12vw 0vw 12vw; text-align: center;}
+
+.tescoresearch{padding: 10vw 8vw 0vw 8vw;}
+.tescocardsort{padding: 6vw 8vw 0vw 8vw;}
+
+.tescoprocess{padding: 10vw 8vw 0vw 8vw;}
+.tescosketch{padding: 6vw 8vw 0vw 8vw;}
+.tescoprocess2{padding: 6vw 8vw 0vw 8vw;}
+.tescoexample{padding: 6vw 8vw 0vw 8vw;}
+.tescoprocess3{padding: 6vw 8vw 0vw 8vw;}
+.tescooutcome{padding: 10vw 8vw 0vw 8vw;}
+.tescoblockframes {padding: 6vw 8vw 0vw 8vw;}
+.tescoicons {padding: 6vw 8vw 0vw 8vw;}
+.tescooutcome2 {padding: 6vw 8vw 0vw 8vw;}
+.tescoprototype{padding: 6vw 8vw 0vw 8vw;}
+.tescoredesign{padding: 6vw 0vw 0vw 0vw;}
+.tescoreflections{padding: 10vw 8vw 0vw 8vw;}
+.tescoreflections2{padding: 6vw 8vw 0vw 8vw;}
+.tescolink{padding: 6vw 8vw 9vw 8vw;}
+
+    
+/*----- SIDE PROJECTS PAGE -------*/  
+
+.sideprojectheader {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "sideprojectimage"
+    "sideprojectintro"}
+
+.sideprojectintro{text-align:center; padding: 0vw 8vw 8vw 4vw;}
+.sideprojectimage{padding: 22vw 8vw 4vw 8vw;}
+
+
+
+.sideprojectgrid {
+    display: grid;
+    padding: 8vw;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "project1"
+    "project2"
+    "project3"
+    "project4"
+    "project5"
+    "project6"
+    "project7"
+    "project8"
+    "project9"
+    "project10"
+    "project11"
+    "project12"
+    "project13"
+    "project14"
+    "project15"
+    "project16"
+    "project17"
+    "project18"}
